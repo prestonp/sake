@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .page-header
+    h2 latest image
+  img.img-rounded.img-responsive(src='/photos/'+latest)
+  p.archive
+    a.btn.btn-primary.text-center(href='/archive') view archive

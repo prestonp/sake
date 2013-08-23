@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  
+  .page-header
+    h2 view page
+  if exists
+    img.img-rounded.img-responsive(src='/photos/' + file)
+  else
+    h2 No file found :(
+  p
+    ul.list-inline
+      li
+        a.btn.btn-primary.text-center(href='/') home
+      li
+        a.btn.btn-primary.text-center(href='/archive') back
