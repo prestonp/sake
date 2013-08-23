@@ -13,8 +13,12 @@ html
     
     #footer
       .container
-        p.text-muted.credit by 
-          a(href='https://twitter.com/prestonp08') @prestonp08
+        if author
+          p.text-muted.credit by 
+            a(href=author.website) #{ author.name }
+        else
+          p.text-muted.credit made with&nbsp;
+            span.glyphicon.glyphicon-heart
 
     block javascripts
       script(src='http://code.jquery.com/jquery-1.10.1.min.js')

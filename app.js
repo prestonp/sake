@@ -4,11 +4,14 @@
  */
 
 var express = require('express')
+  , cfg = require('./config')
   , routes = require('./routes')
   , http = require('http')
   , path = require('path');
 
 var app = express();
+
+app.locals.author = cfg.author;
 
 // all environments
 app.set('port', process.env.PORT || 3002);
