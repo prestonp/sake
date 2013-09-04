@@ -3,11 +3,11 @@ extends layout
 block content
   
   .page-header
-    h2 archived pics
+    h1 archived pics
   ul.list-unstyled
     each file in files
       li
         a(href='/archive/'+file)
           = file
-  p
-    a.btn.btn-primary.text-center(href='/') home
+block append actions
+  a.btn.btn-lg.btn-primary.text-center(href='/') home

@@ -1,0 +1,10 @@
+/**
+ * Optional author configuraation. Copy this to config.js
+ * and add info
+ */
+module.exports = {
+  author: {
+    name: '<AUTHOR NAME>'
+  , website: '<WEBSITE>'
+  }
+}

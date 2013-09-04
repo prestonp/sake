@@ -3,14 +3,15 @@ extends layout
 block content
   
   .page-header
-    h2 view page
+    h1 view page
   if exists
     img.img-rounded.img-responsive(src='/photos/' + file)
   else
-    h2 No file found :(
-  p
-    ul.list-inline
-      li
-        a.btn.btn-primary.text-center(href='/') home
-      li
-        a.btn.btn-primary.text-center(href='/archive') back
+    h1 No file found :(
+    
+block append actions
+  span
+    a.btn.btn-lg.btn-primary.text-center(href='/') home
+  | 
+  span
+    a.btn.btn-lg.btn-primary.text-center(href='/archive') back
