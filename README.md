@@ -18,7 +18,7 @@ usage
 
     npm start
     
-spin the server up and go to localhost:3002 to check it out, ya bish 
+spin the server up and go to localhost:3002 to check it out or see a [demo](http://garden.drawwww.com)
 
 about
 -----
